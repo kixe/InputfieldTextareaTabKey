@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * ProcessWire Inputfield Textarea Tab Key 
+ * 
+ * Exists primarily for it's javascript.
+ *
+ * made by kixe (Christoph Thelen) 22.09.15
+ * Licensed under GNU/GPL v3
+ * 
+ * ProcessWire 2.x 
+ * Copyright (C) 2013 by Ryan Cramer 
+ * Licensed under GNU/GPL v2, see LICENSE.TXT
+ * 
+ * http://processwire.com
+ *
+ *
+ *
+ */
+
+class InputfieldTextareaTabKey extends InputfieldTextarea {
+	public static function getModuleInfo() {
+		return array(
+			'title' => __('Textarea Tab Key', __FILE__), // Module Title
+			'summary' => __('Inputfield Textarea allows using the tab-key to type tabs in a textarea. Prevents switching the focus to the next input.', __FILE__), // Module Summary
+			'version' => 100,
+			'permanent' => true,
+			'author' => 'kixe',
+			'license' => 'GNU-GPLv3',
+			'hreflicense' => 'http://www.gnu.org/licenses/gpl-3.0.html',
+		);
+	}
+
+	public function init() {
+		parent::init();
+		wire('modules')->get('JqueryCore'); // required
+	}
+}
