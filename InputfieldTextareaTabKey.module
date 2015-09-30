@@ -14,7 +14,7 @@
  * 
  * http://processwire.com
  *
- *
+ * https://processwire.com/talk/topic/10950-inputfield-textarea-tab-key/
  *
  */
 
@@ -24,6 +24,7 @@ class InputfieldTextareaTabKey extends InputfieldTextarea {
 			'title' => __('Textarea Tab Key', __FILE__), // Module Title
 			'summary' => __('Inputfield Textarea allows using the tab-key to type tabs in a textarea. Prevents switching the focus to the next input.', __FILE__), // Module Summary
 			'version' => 100,
+			'href' => 'https://processwire.com/talk/topic/10950-inputfield-textarea-tab-key/',
 			'permanent' => true,
 			'author' => 'kixe',
 			'license' => 'GNU-GPLv3',
