@@ -23,13 +23,17 @@ class InputfieldTextareaTabKey extends InputfieldTextarea {
 		return array(
 			'title' => __('Textarea Tab Key', __FILE__), // Module Title
 			'summary' => __('Inputfield Textarea allows using the tab-key to type tabs in a textarea. Prevents switching the focus to the next input.', __FILE__), // Module Summary
-			'version' => 100,
+			'version' => 101,
 			'href' => 'https://processwire.com/talk/topic/10950-inputfield-textarea-tab-key/',
 			'permanent' => true,
 			'author' => 'kixe',
 			'license' => 'GNU-GPLv3',
 			'hreflicense' => 'http://www.gnu.org/licenses/gpl-3.0.html',
 		);
+	}
+
+	public function __construct() {
+	    // intentionally empty
 	}
 
 	public function init() {
